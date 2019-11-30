@@ -42,8 +42,9 @@ h1{
     text-align: center;
 }
 .product-image{
-    height: 75%;
+    height: 70%;
     width: 100%;
+    padding-bottom: 5%;
 }
 span{
     color:#ff6f5e;
@@ -52,6 +53,13 @@ span{
     font-weight: bold;
 }
 .footer{
+    font-size: 20px;
     background-color: #40bfc1;
     text-align: center;
+    padding-bottom: 5%;
+    padding-top: 3%;
+}
+.contact-details{
+    color: white;
+    padding: 0% 5%;
 }

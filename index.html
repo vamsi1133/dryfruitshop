@@ -23,6 +23,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" crossorigin="anonymous"></script>
+    <script>
+        function scrollToProucts() {
+            var elmnt = document.getElementById("allproducts");
+            elmnt.scrollIntoView();
+        }
+
+        function scrollToContact() {
+            var elmnt = document.getElementById("contact-us");
+            elmnt.scrollIntoView();
+        }
+
+    </script>
 </head>
 
 <body>
@@ -40,8 +53,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link">contact</a></li>
-                        <li class="nav-item"><a class="nav-link">products</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="scrollToProucts()">products</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="scrollToContact()">contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -52,11 +65,13 @@
             </div>
             <div class="col-md-6">
                 <img class="img-fluid" src="resources/title.png">
-                <span style="color:white;font-size:2vw">Door delivery availble for all your celeberations</span>
+                <marquee>
+                    <span style="color:white">Door delivery availble for all your celeberations</span>
+                </marquee>
             </div>
         </div>
     </section>
-    <section class="product">
+    <section class="product" id="allproducts">
         <h1>Products available with us</h1>
         <div class="row">
             <div class="col-lg-4 col-md-6 ">
@@ -89,7 +104,7 @@
             </div>
             <div class="col-lg-4 col-md-6 ">
                 <img class="img-fluid product-image" src="resources/chocolate.png">
-                <span>chocolate</span>
+                <span>chocolates</span>
             </div>
             <div class="col-lg-4 col-md-6 ">
                 <img class="img-fluid product-image" src="resources/cookie.png">
@@ -97,11 +112,14 @@
             </div>
         </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="contact-us">
         <div>
-            <a href="tel">phone no</a>
-            <a>email</a>
-            <address>Address</address>
+            <a class="contact-details" href="tel:9866242102">
+                <i class="fa fa-phone" aria-hidden="true"></i> 9866242102
+            </a>
+            <a class="contact-details" href="mailto:srigayathridryfruits.com">
+                <i class="fas fa-envelope"></i> Send Mail
+            </a>
         </div>
     </section>
 </body>
