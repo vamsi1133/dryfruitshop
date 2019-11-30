@@ -17,7 +17,7 @@ html, body {
 
 .nav-item{
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .title{
@@ -34,4 +34,20 @@ h1{
     font-family: 'Courgette', cursive;
     font-size:4vw;
     line-height: 1.5;  
+}
+
+.product{
+    background-color: #f5f0e3;
+    padding: 5%;
+    text-align: center;
+}
+.product-image{
+    height: 75%;
+    width: 100%;
+}
+span{
+    color:#ff6f5e;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3vw;
+    font-weight: bold;
 }
