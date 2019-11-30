@@ -1,10 +1,9 @@
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html, body {
+    overflow-x:hidden;
+    width:100%;
+   /* You may also want to try adding:*/
+    margin: 0;
+    padding: 0;
 }
 .header-image{
     width:80%;
@@ -12,7 +11,7 @@ html,body
 .navbar-brand{
     font-family: 'Ubuntu';
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3vw;
     color:white;
 }
 
